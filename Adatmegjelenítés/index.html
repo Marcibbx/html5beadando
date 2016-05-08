@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Directions service</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="floating-panel">
+      <b>Destination: </b>
+      <select id="end">
+        <option value="miskolc">Miskolc</option>
+        <option value="kecskemét">Kecskemét</option>
+        <option value="debrecen">Debrecen</option>
+      </select>
+      <input type="checkbox" id="iscustom" value="custom" /><label for="iscustom">Custom address</label>
+      <input type="text" id="address" placeholder="Custom address" />
+      <input type="button" id="doplan" value="Plan!" />
+    </div>
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TshhTf_uZgM-0X0vTjfMVoXNgxGOjJw&callback=initMap"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
